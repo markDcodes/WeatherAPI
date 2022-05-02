@@ -1,4 +1,4 @@
-//Description:
+//Description: Back-end code to pull weather data for specific city from OpenWeather API
 
 const express = require("express");
 const app = express();
