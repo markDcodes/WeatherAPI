@@ -37,7 +37,7 @@ app.post("/", function(req, res) {
       res.write("<h1>The temperature in " + query + " is " + temp + "degrees Farenheit</h1>");
       res.write("<h3>The weather is currently " + weatherDescription + "</h3>");
       res.write("<img src =" + imageURL + ">"); //send weather icon image
-      res.send(); //cab only call res.send ONCE!
+      res.send(); //can only call res.send ONCE!
     })
 
   })
