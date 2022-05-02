@@ -19,7 +19,7 @@ app.post("/", function(req, res) {
   //console.log(req.body.cityName);
   //breakout query so we can have user modify later
   const query = req.body.cityName;
-  const apiKey = "f924157a972b81c60b4219678427b318";
+  const apiKey = process.env.OPENWEATHERKEY;
   const units = "imperial";
   const url = "https://api.openweathermap.org/data/2.5/weather?appid=" + apiKey + "&q=" + query + "&units=" + units;
   //external GET request
